@@ -24,3 +24,33 @@
 .action_badge > img{
     width: 70px;
 }
+.footer_top{
+    background-image: url('../img/footer-bg.jpg');
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text_footer{
+    color: #959595;
+}
+
+#actions_comics{
+    position: relative;
+    z-index: 5;
+}
+
+.logo_footer{
+    transform: translatey(-120px);
+}
+.footer_bottom{
+    height: 200px;
+    position: relative;
+    z-index: 5;
+    .sign_up > button{
+        border: 2px solid aqua;
+    }
+
+    .follow > h5{
+        color: aqua;
+    }
+}
