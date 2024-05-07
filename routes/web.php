@@ -13,6 +13,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/characters', function () {
+    return view('guest.characters');
+})->name('guest.chracters');
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('guest.comics');
+})->name('guest.comics');
+
+Route::get('/movies', function () {
+    return view('guest.movies');
+})->name('guest.movies');
+
+Route::get('/tv', function () {
+    return view('guest.tv');
+})->name('guest.tv');
+
+Route::get('/games', function () {
+    return view('guest.games');
+})->name('guest.games');
+
+Route::get('/collectibles', function () {
+    return view('guest.collectibles');
+})->name('guest.collectibles');
+
+Route::get('/videos', function () {
+    return view('guest.videos');
+})->name('guest.videos');
+
+Route::get('/fans', function () {
+    return view('guest.fans');
+})->name('guest.fans');
+
+Route::get('/news', function () {
+    return view('guest.news');
+})->name('guest.news');

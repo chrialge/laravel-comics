@@ -1,1 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
+
+.active{
+    color:aqua;
+
+}
+.border_active{
+    border-bottom: 4px solid aqua;
+}
