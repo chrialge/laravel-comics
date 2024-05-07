@@ -7,3 +7,20 @@
 .border_active{
     border-bottom: 4px solid aqua;
 }
+
+#jumbotron{
+    background-image: url('../img/jumbotron.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.title-section{
+    position: relative;
+    bottom: 70px;
+}
+
+.action_badge > img{
+    width: 70px;
+}

@@ -23,7 +23,7 @@
 
     @include('partials.header')
 
-    <main class="min-vh-100">
+    <main class="">
         @yield('content')
     </main>
 
