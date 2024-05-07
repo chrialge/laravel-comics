@@ -2,6 +2,9 @@
 
 @section('content')
 
-<h3>products</h3>
+<section class="min-vh-100 position-relative bg-light" style="z-index: 5;">
+    <h3>tv</h3>
+</section>
+
 
 @endsection

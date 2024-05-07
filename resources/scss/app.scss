@@ -1,11 +1,23 @@
+@use './partial/variable' as *;
 @import '~bootstrap/scss/bootstrap';
 
+.header-top{
+ background-color: $bg-primary;
+}
 .active{
-    color:aqua;
+    color: $bg-primary;
 
 }
 .border_active{
-    border-bottom: 4px solid aqua;
+    border-bottom: 4px solid $bg-primary;
+    height: 95px;
+}
+
+.search_border{
+    border-bottom: 3px solid $bg-primary;
+    > input::-webkit-input-placeholder{
+        text-align: end;
+    }
 }
 
 #jumbotron{
@@ -31,7 +43,7 @@
     background-size: cover;
 }
 .text_footer{
-    color: #959595;
+    color: $text-footer;
 }
 
 #actions_comics{
@@ -47,10 +59,10 @@
     position: relative;
     z-index: 5;
     .sign_up > button{
-        border: 2px solid aqua;
+        border: 2px solid $bg-primary;
     }
 
     .follow > h5{
-        color: aqua;
+        color: $bg-primary;
     }
 }

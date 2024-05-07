@@ -18,7 +18,9 @@ Route::get('/characters', function () {
 })->name('guest.chracters');
 
 Route::get('/', function () {
-    return view('guest.comics');
+    $result = config('db.comics');
+    // @dd($result);
+    return view('guest.comics', compact('result'));
 })->name('guest.comics');
 
 Route::get('/movies', function () {
@@ -37,9 +39,9 @@ Route::get('/collectibles', function () {
     return view('guest.collectibles');
 })->name('guest.collectibles');
 
-Route::get('/videos', function () {
-    return view('guest.videos');
-})->name('guest.videos');
+Route::get('/video', function () {
+    return view('guest.video');
+})->name('guest.video');
 
 Route::get('/fans', function () {
     return view('guest.fans');
