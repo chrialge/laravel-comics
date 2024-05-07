@@ -15,12 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/characters', function () {
     return view('guest.characters');
-})->name('guest.chracters');
+})->name('guest.characters');
 
 Route::get('/', function () {
     $result = config('db.comics');
+
+
+    $actions = config('db.action_client');
+    // @dd($action_client);
     // @dd($result);
-    return view('guest.comics', compact('result'));
+    return view('guest.comics', compact('result'), compact('actions'));
 })->name('guest.comics');
 
 Route::get('/movies', function () {

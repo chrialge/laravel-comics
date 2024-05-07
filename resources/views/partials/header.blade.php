@@ -1,4 +1,4 @@
-<header>
+<header class=" bg-light ">
     <div class="header-top ">
         <div class="container d-flex justify-content-end text-white py-2">
             <span class="pe-2">DC POWER VISA</span>
@@ -6,7 +6,7 @@
         </div>
 
     </div>
-    <div class="container bg-light ">
+    <div class="container">
 
 
         <nav class="navbar-expand-sm  d-flex justify-content-between align-items-center">
@@ -15,16 +15,76 @@
             </div>
             <div class="pages">
                 <ul class="list-unstyled d-flex h-100 align-items-center m-0">
-                    <li><a href="/characters" class="text-decoration-none text-dark px-2">CHARACTERS</a></li>
-                    <li class="border_active d-flex align-items-center"><a href="/" class=" text-decoration-none px-2 active">COMICS</a></li>
-                    <li><a href="/movies" class="text-dark text-decoration-none px-2">MOVIES</a></li>
-                    <li><a href="/tv" class="text-dark text-decoration-none px-2">TV</a></li>
-                    <li><a href="/games" class="text-dark text-decoration-none px-2">GAMES</a></li>
-                    <li><a href="/collectibles" class="text-dark text-decoration-none px-2">COLLECTIBLES</a></li>
-                    <li><a href="/video" class="text-dark text-decoration-none px-2">VIDEOS</a></li>
-                    <li><a href="/fans" class="text-dark text-decoration-none px-2">FANS</a></li>
-                    <li><a href="/news" class="text-dark text-decoration-none px-2">NEWS</a></li>
-                    <li><a href="#" class="text-dark text-decoration-none px-2">SHOP <span style="color: #0282F9;">&#11206;</span></a></li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.characters' ? 'border_active' : ''}}">
+                        <a href="/characters" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.characters' ? 'active' : 'text-dark'}}">
+                            <h6>CHARACTERS</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.comics' ? 'border_active' : ''}}">
+                        <a href="/" class="text-decoration-none px-2 
+                        {{Route::currentRouteName() === 'guest.comics' ? 'active' : 'text-dark'}}">
+                            <h6>COMICS</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.movies' ? 'border_active' : ''}}">
+                        <a href="/movies" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.movies' ? 'active' : 'text-dark'}}">
+                            <h6>MOVIES</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.tv' ? 'border_active' : ''}}">
+                        <a href="/tv" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.tv' ? 'active' : 'text-dark'}}">
+                            <h6>TV</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.games' ? 'border_active' : ''}}">
+                        <a href="/games" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.games' ? 'active' : 'text-dark'}}">
+                            <h6>GAMES</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.collectibles' ? 'border_active' : ''}}">
+                        <a href="/collectibles" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.collectibles' ? 'active' : 'text-dark'}}">
+                            <h6>COLLECTIBLES</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.video' ? 'border_active' : ''}}">
+                        <a href="/video" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.video' ? 'active' : 'text-dark'}}">
+                            <h6>VIDEOS</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.fans' ? 'border_active' : ''}}">
+                        <a href="/fans" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.fans' ? 'active' : 'text-dark'}}">
+                            <h6>FANS</h6>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center
+                    {{Route::currentRouteName() === 'guest.news' ? 'border_active' : ''}}">
+                        <a href="/news" class="text-decoration-none px-2
+                        {{Route::currentRouteName() === 'guest.news' ? 'active' : 'text-dark'}}">
+                            <h6>NEWS</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-dark text-decoration-none px-2">
+                            <h6>SHOP
+                                <span style="color: #0282F9;">&#11206;</span>
+                            </h6>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="search">
