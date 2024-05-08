@@ -54,7 +54,7 @@
     </section>
 
     {{-- section info --}}
-    <section class="info border_bottom" style=" background-color:rgba(128, 128, 128, 0.055); height: 400px;">
+    <section class="info border_bottom" style="height: 400px;">
         <div class="container">
             <div class="row row-cols-2 gx-4">
                 {{-- left --}}
@@ -62,12 +62,12 @@
 
                     {{-- title --}}
                     <div class="title border_bottom py-3">
-                        <h4>Talent</h4>
+                        <h4 class="text_info">Talent</h4>
                     </div>
 
                     {{-- art by --}}
                     <div class="attribute d-flex border_bottom py-1">
-                        <h6 style="width: 350px">
+                        <h6 class="text_info" style="width: 350px">
                             Art by:
                         </h6>
                         <span>
@@ -84,7 +84,7 @@
 
                     {{-- written by --}}
                     <div class="attribute d-flex border_bottom py-1">
-                        <h6 style="width: 316px">
+                        <h6 style="width: 316px" class="text_info">
                             Written by:
                         </h6>
                         <p>
@@ -103,32 +103,33 @@
 
                 {{-- rigth --}}
                 <div class="col">
+
                     {{-- title --}}
                     <div class="title border_bottom py-3">
-                        <h4>Specs</h4>
+                        <h4 class="text_info">Specs</h4>
                     </div>
 
                     {{-- series --}}
                     <div class="attribute d-flex border_bottom py-1">
-                        <h6 style="width: 150px">
+                        <h6 style="width: 150px" class="text_info">
                             Series:
                         </h6>
                         <span class="active">{{ strtoupper($comic['series']) }}</span>
 
                     </div>
 
-                    {{-- written by --}}
+                    {{-- price --}}
                     <div class="attribute d-flex border_bottom py-1">
-                        <h6 style="width: 150px">
+                        <h6 style="width: 150px" class="text_info">
                             U.S. Price:
                         </h6>
                         <span>{{ $comic['price'] }}</span>
 
                     </div>
 
-                    {{-- written by --}}
+                    {{-- relase data --}}
                     <div class="attribute d-flex border_bottom py-1">
-                        <h6 style="width: 150px">
+                        <h6 style="width: 150px" class="text_info">
                             On Sale Data:
                         </h6>
                         <span>{{ $comic['sale_date'] }}</span>
@@ -140,31 +141,29 @@
     </section>
 
     {{-- section banner --}}
-    <section class="banner bg-white">
+    <section class="banner">
         <div class="container border_bottom" style=": 1px solid rgba(128, 128, 128, 0.055)">
             <div class=" row row-cols-4">
-                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+
+                <div class="col py-3 d-flex justify-content-between border_box_banner">
                     <span>DIGITAL COMICS</span>
-                    <img src="{{ Vite::asset('/resources/img/icons/phone.png') }}" alt=""
-                        style=" filter: grayscale(10%); background-color:black">
+                    <img src="{{ Vite::asset('/resources/img/icons/phone.png') }}" alt="">
                 </div>
-                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+
+                <div class="col py-3 d-flex justify-content-between border_box_banner">
                     <span>SHOP DC</span>
-
-                    <img src="{{ Vite::asset('/resources/img/icons/shop.png') }}" alt=""
-                        style=" filter: grayscale(10%); background-color:black">
+                    <img src="{{ Vite::asset('/resources/img/icons/shop.png') }}" alt="">
                 </div>
-                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+
+                <div class="col py-3 d-flex justify-content-between border_box_banner">
                     <span>COMIC SHOP LOCATOR</span>
-
-                    <img src="{{ Vite::asset('/resources/img/icons/position.png') }}" alt=""
-                        style=" filter: grayscale(10%); background-color:black">
+                    <img src="{{ Vite::asset('/resources/img/icons/position.png') }}" alt="">
                 </div>
-                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+
+                <div class="col py-3 d-flex justify-content-between border_box_banner">
                     <span>SUBSCRIPTIONS</span>
 
-                    <img src="{{ Vite::asset('/resources/img/icons/shirt.png') }}" alt=""
-                        style=" filter: grayscale(10%); background-color:black">
+                    <img src="{{ Vite::asset('/resources/img/icons/shirt.png') }}" alt="">
                 </div>
             </div>
 

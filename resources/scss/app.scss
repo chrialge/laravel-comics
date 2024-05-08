@@ -91,10 +91,21 @@
 
 
 .border_bottom{
-    border-bottom: 2px solid rgba(128, 128, 128, 0.163);
+    border-bottom: 2px solid $border-color;
 }
 
 .banner{
     position: relative;
     z-index: 5;
+}
+.info, .banner{
+    background-color: $bg-comic-post;
+}
+.border_box_banner{
+    border: 2px solid $border-color;
+    background-color: rgb(81, 80, 80);
+}
+
+.text_info{
+    color: $text-info;
 }
