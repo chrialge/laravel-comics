@@ -7,7 +7,7 @@
     {{-- section thumb --}}
     <section class="thumb position-relative">
         <div class="container">
-            <img src="{{ $comic['thumb'] }}" alt="" class=" position-absolute">
+            <img src="{{ $comic['thumb'] }}" alt="" class=" position-absolute" width="300px">
         </div>
     </section>
 
