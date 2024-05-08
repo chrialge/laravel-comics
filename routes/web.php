@@ -17,7 +17,7 @@ Route::get('/characters', function () {
     return view('guest.characters');
 })->name('guest.characters');
 
-Route::get('/comics', function () {
+Route::get('/', function () {
     $result = config('db.comics');
     $footerList = config('footer');
 
@@ -29,10 +29,9 @@ Route::get('/comics', function () {
     return view('comics.index', compact('result'), compact('actions'), compact('footerList'));
 })->name('guest.comics');
 
-
-
-
 Route::get('/comics/{id}', function ($id) {
+
+    abort_unless($id >= 0 && $id < count(config('db.comics')), 404);
 
     $comic = config('db.comics')[$id];
 

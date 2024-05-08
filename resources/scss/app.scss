@@ -88,3 +88,13 @@
         color: $text-banner-comic-post;
     }
 }
+
+
+.border_bottom{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.163);
+}
+
+.banner{
+    position: relative;
+    z-index: 5;
+}

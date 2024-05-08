@@ -52,5 +52,123 @@
             </div>
         </div>
     </section>
+
+    {{-- section info --}}
+    <section class="info border_bottom" style=" background-color:rgba(128, 128, 128, 0.055); height: 400px;">
+        <div class="container">
+            <div class="row row-cols-2 gx-4">
+                {{-- left --}}
+                <div class="col">
+
+                    {{-- title --}}
+                    <div class="title border_bottom py-3">
+                        <h4>Talent</h4>
+                    </div>
+
+                    {{-- art by --}}
+                    <div class="attribute d-flex border_bottom py-1">
+                        <h6 style="width: 350px">
+                            Art by:
+                        </h6>
+                        <span>
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>,
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>,
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>,
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>,
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>,
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>,
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>,
+                            <a href="" class=" text-decoration-none">Jose Luis Garcia</a>
+                        </span>
+                    </div>
+
+                    {{-- written by --}}
+                    <div class="attribute d-flex border_bottom py-1">
+                        <h6 style="width: 316px">
+                            Written by:
+                        </h6>
+                        <p>
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>,
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>,
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>,
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>,
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>,
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>,
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>,
+                            <a href="" class=" text-decoration-none">Brand Meltzer</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                {{-- rigth --}}
+                <div class="col">
+                    {{-- title --}}
+                    <div class="title border_bottom py-3">
+                        <h4>Specs</h4>
+                    </div>
+
+                    {{-- series --}}
+                    <div class="attribute d-flex border_bottom py-1">
+                        <h6 style="width: 150px">
+                            Series:
+                        </h6>
+                        <span class="active">{{ strtoupper($comic['series']) }}</span>
+
+                    </div>
+
+                    {{-- written by --}}
+                    <div class="attribute d-flex border_bottom py-1">
+                        <h6 style="width: 150px">
+                            U.S. Price:
+                        </h6>
+                        <span>{{ $comic['price'] }}</span>
+
+                    </div>
+
+                    {{-- written by --}}
+                    <div class="attribute d-flex border_bottom py-1">
+                        <h6 style="width: 150px">
+                            On Sale Data:
+                        </h6>
+                        <span>{{ $comic['sale_date'] }}</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- section banner --}}
+    <section class="banner bg-white">
+        <div class="container border_bottom" style=": 1px solid rgba(128, 128, 128, 0.055)">
+            <div class=" row row-cols-4">
+                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+                    <span>DIGITAL COMICS</span>
+                    <img src="{{ Vite::asset('/resources/img/icons/phone.png') }}" alt=""
+                        style=" filter: grayscale(10%); background-color:black">
+                </div>
+                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+                    <span>SHOP DC</span>
+
+                    <img src="{{ Vite::asset('/resources/img/icons/shop.png') }}" alt=""
+                        style=" filter: grayscale(10%); background-color:black">
+                </div>
+                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+                    <span>COMIC SHOP LOCATOR</span>
+
+                    <img src="{{ Vite::asset('/resources/img/icons/position.png') }}" alt=""
+                        style=" filter: grayscale(10%); background-color:black">
+                </div>
+                <div class="col py-3 d-flex justify-content-between" style="border:1px solid rgba(128, 128, 128, 0.164)">
+                    <span>SUBSCRIPTIONS</span>
+
+                    <img src="{{ Vite::asset('/resources/img/icons/shirt.png') }}" alt=""
+                        style=" filter: grayscale(10%); background-color:black">
+                </div>
+            </div>
+
+        </div>
+    </section>
 @endsection
 {{-- @dd($comic) --}}
