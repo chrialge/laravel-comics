@@ -13,22 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/characters', function () {
-    return view('guest.characters');
-})->name('guest.characters');
 
+// page index of comic
 Route::get('/', function () {
     $result = config('db.comics');
-    $footerList = config('footer');
-
-
-
+    // $footerList = config('footer');
     $actions = config('db.action_client');
     // @dd($footerList);
     // @dd($result);
-    return view('comics.index', compact('result'), compact('actions'), compact('footerList'));
+    return view('comics.index', compact('result'), compact('actions'));
 })->name('guest.comics');
 
+// page post of comic
 Route::get('/comics/{id}', function ($id) {
 
     abort_unless($id >= 0 && $id < count(config('db.comics')), 404);
@@ -38,7 +34,10 @@ Route::get('/comics/{id}', function ($id) {
     return view('comics.post', compact('comic'));
 })->name('comic');
 
-
+// other routes
+Route::get('/characters', function () {
+    return view('guest.characters');
+})->name('guest.characters');
 
 
 Route::get('/movies', function () {
