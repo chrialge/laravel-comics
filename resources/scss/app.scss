@@ -69,3 +69,22 @@
         color: $bg-primary;
     }
 }
+
+// POST Comic
+
+.thumb{
+    height: 80px;
+    background-color: $bg-primary;
+
+    .container> img{
+        bottom: 50%;
+    }
+}
+
+.info_comic{
+    background-color: $bg-banner-comic-post;
+
+    .text_available{
+        color: $text-banner-comic-post;
+    }
+}

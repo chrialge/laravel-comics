@@ -4,9 +4,8 @@
 <!-- questo viene inserito nel main di layout/app.blade.php, precisamente dove ce @yeild('content') -->
 @section('content')
     <!--Section jumbotron -->
-    <section id="jumbotron">
+    @include('partials.jumbotron')
 
-    </section>
 
     <!-- Section current series -->
     <section id="current_series" class="py-5 bg-dark">
@@ -23,7 +22,7 @@
                 <!-- ciclo nell'array che mi sono fatto passare da routes/web.php, precisamente riga 20-24 -->
                 @foreach ($result as $index => $comic)
                     <div class="col ">
-                        <a href="{{ route('comic', ['id' => $index]) }}">
+                        <a href="{{ route('comic', ['id' => $index]) }}" class=" text-decoration-none">
                             <!-- creo una card con bootstrap -->
                             <div class="card h-100 rounded-0 bg-dark text-light border-0">
                                 <!-- prendo l'url dell'immagine nel valore della chiave thumb -->

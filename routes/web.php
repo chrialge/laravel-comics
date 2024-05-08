@@ -26,7 +26,7 @@ Route::get('/comics', function () {
     $actions = config('db.action_client');
     // @dd($footerList);
     // @dd($result);
-    return view('guest.comics', compact('result'), compact('actions'), compact('footerList'));
+    return view('comics.index', compact('result'), compact('actions'), compact('footerList'));
 })->name('guest.comics');
 
 
@@ -35,8 +35,8 @@ Route::get('/comics', function () {
 Route::get('/comics/{id}', function ($id) {
 
     $comic = config('db.comics')[$id];
-    @@dd($comic);
-    return view('comics.post', compact($comic));
+
+    return view('comics.post', compact('comic'));
 })->name('comic');
 
 
