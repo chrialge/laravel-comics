@@ -17,15 +17,30 @@ Route::get('/characters', function () {
     return view('guest.characters');
 })->name('guest.characters');
 
-Route::get('/', function () {
+Route::get('/comics', function () {
     $result = config('db.comics');
+    $footerList = config('footer');
+
 
 
     $actions = config('db.action_client');
-    // @dd($action_client);
+    // @dd($footerList);
     // @dd($result);
-    return view('guest.comics', compact('result'), compact('actions'));
+    return view('guest.comics', compact('result'), compact('actions'), compact('footerList'));
 })->name('guest.comics');
+
+
+
+
+Route::get('/comics/{id}', function ($id) {
+
+    $comic = config('db.comics')[$id];
+    @@dd($comic);
+    return view('comics.post', compact($comic));
+})->name('comic');
+
+
+
 
 Route::get('/movies', function () {
     return view('guest.movies');

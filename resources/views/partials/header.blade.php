@@ -11,70 +11,88 @@
 
         <nav class="navbar-expand-sm  d-flex justify-content-between align-items-center">
             <div class="logo py-2">
-                <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="" style="width: 80px;">
+                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" style="width: 80px;">
             </div>
             <div class="pages">
                 <ul class="list-unstyled d-flex h-100 align-items-center m-0">
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.characters' ? 'border_active' : ''}}">
-                        <a href="/characters" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.characters' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.characters' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.characters') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.characters' ? 'active' : 'text-dark' }}">
                             <h6>CHARACTERS</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.comics' ? 'border_active' : ''}}">
-                        <a href="/" class="text-decoration-none px-2 
-                        {{Route::currentRouteName() === 'guest.comics' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.comics' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.comics') }}"
+                            class="text-decoration-none px-2 
+                        {{ Route::currentRouteName() === 'guest.comics' ? 'active' : 'text-dark' }}">
                             <h6>COMICS</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.movies' ? 'border_active' : ''}}">
-                        <a href="/movies" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.movies' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.movies' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.movies') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.movies' ? 'active' : 'text-dark' }}">
                             <h6>MOVIES</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.tv' ? 'border_active' : ''}}">
-                        <a href="/tv" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.tv' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.tv' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.tv') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.tv' ? 'active' : 'text-dark' }}">
                             <h6>TV</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.games' ? 'border_active' : ''}}">
-                        <a href="/games" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.games' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.games' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.games') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.games' ? 'active' : 'text-dark' }}">
                             <h6>GAMES</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.collectibles' ? 'border_active' : ''}}">
-                        <a href="/collectibles" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.collectibles' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.collectibles' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.collectibles') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.collectibles' ? 'active' : 'text-dark' }}">
                             <h6>COLLECTIBLES</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.video' ? 'border_active' : ''}}">
-                        <a href="/video" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.video' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.video' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.video') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.video' ? 'active' : 'text-dark' }}">
                             <h6>VIDEOS</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.fans' ? 'border_active' : ''}}">
-                        <a href="/fans" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.fans' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.fans' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.fans') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.fans' ? 'active' : 'text-dark' }}">
                             <h6>FANS</h6>
                         </a>
                     </li>
-                    <li class="d-flex align-items-center
-                    {{Route::currentRouteName() === 'guest.news' ? 'border_active' : ''}}">
-                        <a href="/news" class="text-decoration-none px-2
-                        {{Route::currentRouteName() === 'guest.news' ? 'active' : 'text-dark'}}">
+                    <li
+                        class="d-flex align-items-center
+                    {{ Route::currentRouteName() === 'guest.news' ? 'border_active' : '' }}">
+                        <a href="{{ route('guest.news') }}"
+                            class="text-decoration-none px-2
+                        {{ Route::currentRouteName() === 'guest.news' ? 'active' : 'text-dark' }}">
                             <h6>NEWS</h6>
                         </a>
                     </li>
@@ -89,7 +107,8 @@
             </div>
             <div class="search">
                 <div class="mb-3 d-flex align-items-center search_border">
-                    <input type="search" class="form-control border-0" name="search" id="search" aria-describedby="searchHelper" placeholder="Search" />
+                    <input type="search" class="form-control border-0" name="search" id="search"
+                        aria-describedby="searchHelper" placeholder="Search" />
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
