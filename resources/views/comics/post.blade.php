@@ -19,7 +19,7 @@
                 {{-- left --}}
                 <div class="col-8">
                     {{-- title --}}
-                    <h2 class=" pb-3">{{ strtoupper($comic['title']) }}</h2>
+                    <h2 class=" pb-3 text_info">{{ strtoupper($comic['title']) }}</h2>
 
                     {{-- availability banner --}}
                     <div class="info_comic d-flex text-light">
